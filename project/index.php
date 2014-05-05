@@ -100,10 +100,10 @@
                           <?php
 if(isset($_POST['submit']))
 {
-mysql_connect("mysql14.000webhost.com", "a6428231_comp", "123abc") or die(mysql_error());
+mysql_connect("localhost", "root", "root") or die(mysql_error());
 
 // Select the database
-mysql_select_db("a6428231_comp") or die(mysql_error());
+mysql_select_db("smart") or die(mysql_error());
 
 //Get Name
 $name=name; //Whatever is sent
@@ -143,10 +143,10 @@ mysql_close();
 }
 else if(isset($_POST['asubmit']))
 {
-mysql_connect("mysql14.000webhost.com", "a6428231_comp", "123abc") or die(mysql_error());
+mysql_connect("localhost", "root", "root") or die(mysql_error());
 
 // Select the database
-mysql_select_db("a6428231_comp") or die(mysql_error());
+mysql_select_db("smart") or die(mysql_error());
 
 //Get Name
 $name=name; //Whatever is sent
